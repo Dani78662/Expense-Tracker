@@ -1,5 +1,5 @@
 import React from "react";
-
+import style from "./style.css";
 const Expense = ({ expense, getEditData, deleteExpense }) => {
   const editHandler = () => {
     console.log(expense);
@@ -11,13 +11,21 @@ const Expense = ({ expense, getEditData, deleteExpense }) => {
   };
   return (
     <li>
-      <div className='date'>{expense.date}</div>
-      <div>{expense.title}</div>
-      <div>${expense.price}</div>
-      <button type='button' onClick={editHandler}>
+      <div className='date'>
+        <h4>Date</h4>
+        {expense.date}
+      </div>
+      <div>
+        <h4>Title</h4>
+        {expense.title}
+      </div>
+      <div>
+        <h4>Price</h4>${expense.price}
+      </div>
+      <button type='button' onClick={editHandler} className='button'>
         Edit
       </button>
-      <button type='button' onClick={deleteHandler}>
+      <button type='button' onClick={deleteHandler} className='button'>
         Delete
       </button>
     </li>

@@ -5,7 +5,8 @@ const Form = styled.form`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 0 400px;
+  margin: 0 auto;
+  margin-top: 100px;
   min-width: 500px;
   max-width: 1000px;
   background: rgba(255, 255, 255, 0.15);
@@ -15,6 +16,14 @@ const Form = styled.form`
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 10px;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  margin-top: 10rem;
+  padding: 15px;
+  background-color: goldenrod;
+  border-radius: 10px;
+  color: black;
 `;
 
 const Input = styled.input`
